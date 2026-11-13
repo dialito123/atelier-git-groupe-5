@@ -23,3 +23,9 @@ Savoir travailler en équipe avec les branches et les Pull Requests, résoudre d
 
 3. **Que se passe-t-il si on supprime un Codespace après un commit sans push ?**
    Le commit est perdu définitivement, car il n'existait que localement dans le Codespace.
+
+
+## Stash
+`git stash` met de côté les modifications non commitées pour retrouver un dossier propre.
+`git stash list` affiche la liste des modifications mises de côté.
+`git stash pop` réapplique les dernières modifications mises de côté et les retire de la liste.
