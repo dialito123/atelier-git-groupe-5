@@ -14,3 +14,8 @@ Sur le dépôt distant GitHub (partagé avec l'équipe).
 
 3. Que se passe-t-il si je supprime mon Codespace après un commit mais sans push ?
 Le travail est définitivement perdu car il n'a jamais été envoyé sur GitHub.
+
+## Stash
+`git stash` met de côté les modifications non commitées pour retrouver un dossier propre.
+`git stash list` affiche la liste des modifications mises de côté.
+`git stash pop` réapplique les dernières modifications mises de côté et les retire de la liste.
