@@ -21,3 +21,12 @@ h2 { color: green; }
         padding-left: 20px;
     }
 }
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark a {
+    color: #66ccff;
+}
