@@ -1,0 +1,22 @@
+name: Lint HTML
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Vérifier que les pages existent
+        run: |
+          test -f index.html
+          test -f contact.html
+          test -f cours.html
+
+      - name: Lancer HTMLHint
+        run: npx --yes htmlhint *.html
